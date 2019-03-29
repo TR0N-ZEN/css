@@ -1,3 +1,5 @@
-$('html').on('click', function(){
-  $(".box").toggleClass("ispaused");
+$(document).ready(function(){
+  $("p").click(function(){
+    $(".box").toggleClass("ispaused");
+  });
 });

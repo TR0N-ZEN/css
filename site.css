@@ -26,24 +26,23 @@ body {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-
+*/
 
 @keyframes myframes {
   0%{
     transform: scale(1) rotate(0deg);
     opacity: 50;
     width: 0%;
-    background-color:green
+    /*background-color:green*/
   }
 
   100%{
     transform: scale(1) rotate(0deg);
     opacity: 50;
     width: 100%;
-    background-color:green
   }
 }
-*/
+
 
 .a .b { grid-area: b;}
 .a .c { grid-area: c;}
@@ -71,12 +70,28 @@ body {
     background-color: rgba(226, 10, 10, 0.867);
     border-style: dotted;
     border-width: medium;
+    animation-name: myframes;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }    
 
 .c {
     background-color: rgba(10, 226, 57, 0.867);
     border-style: dotted;
     border-width: medium;
+    animation-name: myframes;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }   
 
 .d {

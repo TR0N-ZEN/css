@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 5% 5% 5% 5%;
+}
+
+@keyframes myframes {
+  0%{
+    transform: scale(1) rotate(0deg);
+    width: 0%;
+  }
+  50%{
+    transform: scale(0.5) rotate(90deg);
+    width: 50%;
+  }
+  100%{
+    transform: scale(1) rotate(0deg);
+    width: 100%;
+  }
+}
+
+.a {
+  overflow: visible;
+}
+/*
+.b {
+  animation: myframes 10s linear 0s infinite alternate forwards;
+}    
+
+.c {
+  animation: myframes 10s linear 0s infinite normal forwards;
+}
+*/
+/*
+.b {
+  background-color: rgba(32, 81, 144, 0.89);
+  animation-name: myframes;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}    
+
+.c {
+  background-color: rgba(68, 173, 19, 0.867);
+  animation-name: myframes;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+*/
+
+.animation_1 {
+  animation: myframes 8s linear 0s infinite alternate forwards;
+}
+
+
+@keyframes change_grid {
+  from {
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+     "b b c c"
+     "b b c c"
+     /* "d d e e"
+     "d d e e"
+     "f f g g"
+     "f f g g"*/;
+  }
+  to {
+    grid-template-columns: 50% 25% 16% 9%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+     "b b c c"
+     "b b c c"
+     /* "d d e e"
+     "d d e e"
+     "f f g g"
+     "f f g g"*/;
+  }
+}
+
+.a_alternative {
+  animation: change_grid 500ms ease-out 0s 1 alternate forwards;
+}
+
